@@ -50,3 +50,17 @@ CREATE TABLE IF NOT EXISTS Customer (
     Phone VARCHAR(255),
     Fax VARCHAR(255)
 );
+
+CREATE TABLE IF NOT EXISTS Companies (
+    CompanyID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    ContactName VARCHAR(255),
+    ContactTitle VARCHAR(255),
+    Address VARCHAR(255),
+    City VARCHAR(255),
+    Region VARCHAR(255),
+    PostalCode VARCHAR(255),
+    Country VARCHAR(255),
+    Phone VARCHAR(255),
+    Fax VARCHAR(255)
+);
