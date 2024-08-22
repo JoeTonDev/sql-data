@@ -1,8 +1,8 @@
-# Create DATABASE
+-- Create DATABASE
 CREATE DATABASE IF NOT EXISTS Sales;
 USE Sales;
 
-# Create TABLE
+-- Create TABLE
 CREATE TABLE IF NOT EXISTS Product (
     ProductID INT PRIMARY KEY,
     ProductName VARCHAR(255),
