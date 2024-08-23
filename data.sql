@@ -64,3 +64,21 @@ CREATE TABLE IF NOT EXISTS Companies (
     Phone VARCHAR(255),
     Fax VARCHAR(255)
 );
+
+
+Create TABLE IF NOT EXISTS Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    EmployeeID INT,
+    OrderDate DATE,
+    RequiredDate DATE,
+    ShippedDate DATE,
+    ShipVia INT,
+    Freight DECIMAL(10,2),
+    ShipName VARCHAR(255),
+    ShipAddress VARCHAR(255),
+    ShipCity VARCHAR(255),
+    ShipRegion VARCHAR(255),
+    ShipPostalCode VARCHAR(255),
+    ShipCountry VARCHAR(255)
+);
