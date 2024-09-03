@@ -1,1 +1,1 @@
-SQL practice project.
+SQL practice scripts.
