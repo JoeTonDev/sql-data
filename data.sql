@@ -66,3 +66,23 @@ CREATE TABLE IF NOT EXISTS Companies (
 );
 
 
+Create TABLE IF NOT EXISTS Employees (
+    EmployeeID INT PRIMARY KEY,
+    LastName VARCHAR(255),
+    FirstName VARCHAR(255),
+    Title VARCHAR(255),
+    TitleOfCourtesy VARCHAR(255),
+    BirthDate DATE,
+    HireDate DATE,
+    Address VARCHAR(255),
+    City VARCHAR(255),
+    Region VARCHAR(255),
+    PostalCode VARCHAR(255),
+    Country VARCHAR(255),
+    HomePhone VARCHAR(255),
+    Extension VARCHAR(255),
+    Photo BLOB,
+    Notes TEXT,
+    ReportsTo INT,
+    PhotoPath VARCHAR(255)
+);
