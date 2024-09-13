@@ -112,3 +112,9 @@ Create TABLE IF NOT EXISTS OrderDetails (
     Quantity INT,
     Discount DECIMAL(10,2)
 );
+
+Create TABLE IF NOT EXISTS Shippers (
+    ShipperID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    Phone VARCHAR(255)
+);
