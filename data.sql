@@ -103,3 +103,12 @@ Create TABLE IF NOT EXISTS Orders (
     ShipPostalCode VARCHAR(255),
     ShipCountry VARCHAR(255)
 );
+
+Create TABLE IF NOT EXISTS OrderDetails (
+    OrderDetailID INT PRIMARY KEY,
+    OrderID INT,
+    ProductID INT,
+    UnitPrice DECIMAL(10,2),
+    Quantity INT,
+    Discount DECIMAL(10,2)
+);
