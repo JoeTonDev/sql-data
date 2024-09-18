@@ -126,3 +126,8 @@ create table if not exists Region (
 
 create table if not exists Territories (
     TerritoryID INT PRIMARY
+
+create table if not exists EmployeeTerritories (
+    EmployeeID INT,
+    TerritoryID INT
+);
