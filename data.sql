@@ -141,3 +141,17 @@ create table if not exists CustomerDemographics (
     CustomerTypeID INT PRIMARY KEY,
     CustomerDesc TEXT
 );
+
+create table if not exists Customers (
+    CustomerID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    ContactName VARCHAR(255),
+    ContactTitle VARCHAR(255),
+    Address VARCHAR(255),
+    City VARCHAR(255),
+    Region VARCHAR(255),
+    PostalCode VARCHAR(255),
+    Country VARCHAR(255),
+    Phone VARCHAR(255),
+    Fax VARCHAR(255)
+);
