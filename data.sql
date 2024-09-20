@@ -155,3 +155,16 @@ create table if not exists Customers (
     Phone VARCHAR(255),
     Fax VARCHAR(255)
 );
+
+create table if not exists Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(255),
+    SupplierID INT,
+    CategoryID INT,
+    QuantityPerUnit VARCHAR(255),
+    UnitPrice DECIMAL(10,2),
+    UnitsInStock INT,
+    UnitsOnOrder INT,
+    ReorderLevel INT,
+    Discontinued INT
+);
