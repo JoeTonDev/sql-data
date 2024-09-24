@@ -168,3 +168,18 @@ create table if not exists Products (
     ReorderLevel INT,
     Discontinued INT
 );
+
+create table if not exists Suppliers (
+    SupplierID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    ContactName VARCHAR(255),
+    ContactTitle VARCHAR(255),
+    Address VARCHAR(255),
+    City VARCHAR(255),
+    Region VARCHAR(255),
+    PostalCode VARCHAR(255),
+    Country VARCHAR(255),
+    Phone VARCHAR(255),
+    Fax VARCHAR(255),
+    HomePage TEXT
+);
