@@ -216,3 +216,10 @@ create table if not exists OrderDetails (
     Quantity INT,
     Discount DECIMAL(10,2)
 );
+
+
+create table if not exists Shippers (
+    ShipperID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    Phone VARCHAR(255)
+);
