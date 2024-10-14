@@ -97,3 +97,7 @@ where emp_no not in (select emp_no from dept_manager where to_date > curdate()) 
 select *
 from employees
 where emp_no in (select emp_no from dept_manager where to_date > curdate()) and emp_no not in (select emp_no from dept_manager where emp_no = 110022 or emp_no = 110039);
+
+select *
+from employees
+where emp_no not in (select emp_no from dept_manager where to_date > curdate()) and emp_no in (select emp_no from dept_manager where emp_no = 110022 or emp_no = 110039);
