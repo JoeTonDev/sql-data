@@ -52,6 +52,7 @@ FROM
         JOIN
     dept_manager dm ON e.emp_no = dm.emp_no; 
  
+
 SELECT 
     e.emp_no,
     e.first_name,
@@ -65,6 +66,7 @@ FROM
 WHERE
     e.last_name = 'Markovitch'
 ORDER BY dept_no DESC , e.emp_no;
+
 
 SELECT 
     e.emp_no,
