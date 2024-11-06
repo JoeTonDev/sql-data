@@ -275,3 +275,13 @@ create table if not exists Products (
     UnitPrice DECIMAL(10,2),
     UnitsInStock INT,   
 );
+
+create table if not exists Suppliers (
+    SupplierID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    ContactName VARCHAR(255),   
+    ContactTitle VARCHAR(255),
+    Address VARCHAR(255),
+    City VARCHAR(255),
+    Region VARCHAR(255),        
+);
