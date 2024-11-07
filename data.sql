@@ -285,3 +285,9 @@ create table if not exists Suppliers (
     City VARCHAR(255),
     Region VARCHAR(255),        
 );
+
+create table if not exists Categories (
+    CategoryID INT PRIMARY KEY,
+    CategoryName VARCHAR(255),
+    Description TEXT
+);
