@@ -323,9 +323,14 @@ create table if not exists Region (
     RegionDescription VARCHAR(255)
 );
 
-crft create table if not exists Territories (   
+create table if not exists Territories (   
     TerritoryID INT PRIMARY KEY,
     TerritoryDescription VARCHAR(255),    
+);
+
+create table if not exists EmployeeTerritories (
+    EmployeeID INT,
+    TerritoryID INT
 );
 
 
