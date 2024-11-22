@@ -333,4 +333,10 @@ create table if not exists EmployeeTerritories (
     TerritoryID INT
 );
 
+create table if not exists CustomerCustomerDemo (
+    CustomerID INT,
+    CustomerTypeID INT
+);
+
+
 
