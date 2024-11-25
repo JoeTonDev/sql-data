@@ -338,5 +338,9 @@ create table if not exists CustomerCustomerDemo (
     CustomerTypeID INT
 );
 
+create table if not exists CustomerDemographics (
+    CustomerTypeID INT PRIMARY KEY,
+    CustomerDesc TEXT 
+);
 
 
