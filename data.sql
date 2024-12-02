@@ -371,5 +371,16 @@ create table if not exists Categories (
     Description TEXT
 );
 
+create table if not exists Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    EmployeeID INT,
+    OrderDate DATE,
+    RequiredDate DATE,
+    ShippedDate DATE,
+    ShipVia INT,
+    Freight DECIMAL(10,2),   
+);
+
 
 
