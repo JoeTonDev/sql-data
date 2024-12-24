@@ -397,28 +397,3 @@ create table if not exists Shippers (
     Phone VARCHAR(255)
 );
 
-create table if not exists Region (
-    RegionID INT PRIMARY KEY,
-    RegionDescription VARCHAR(255)
-);
-
-create table if not exists Territories (   
-    TerritoryID INT PRIMARY KEY,
-    TerritoryDescription VARCHAR(255),    
-);
-
-create table if not exists EmployeeTerritories (
-    EmployeeID INT,
-    TerritoryID INT
-);
-
-create table if not exists CustomerCustomerDemo (        
-    CustomerID INT,
-    CustomerTypeID INT    
-);
-
-create table if not exists CustomerDemographics (
-    CustomerTypeID INT PRIMARY KEY,
-    CustomerDesc TEXT 
-);
-
