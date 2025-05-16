@@ -444,3 +444,9 @@ create table if not exists Suppliers (
     ContactName VARCHAR(255),   
 );
 
+create table if not exists Categories (
+    CategoryID INT PRIMARY KEY,
+    CategoryName VARCHAR(255),
+    Description TEXT
+);
+
