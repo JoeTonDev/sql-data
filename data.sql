@@ -486,4 +486,8 @@ create table if not exists Territories (
     TerritoryDescription VARCHAR(255),
 );
 
+create table if not exists EmployeeTerritories (
+    EmployeeID INT,
+    TerritoryID INT
+);
 
