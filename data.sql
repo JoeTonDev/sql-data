@@ -500,3 +500,9 @@ create table if not exists CustomerDemographics (
     CustomerDesc TEXT 
 );
 
+Create TABLE IF NOT EXISTS Customers (
+    CustomerID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    ContactName VARCHAR(255),   
+);
+
