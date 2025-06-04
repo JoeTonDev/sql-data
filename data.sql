@@ -516,3 +516,8 @@ create table if not exists Products (
     UnitsInStock INT,   
 );
 
+create table if not exists Suppliers (
+    SupplierID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    ContactName VARCHAR(255),   
+);
