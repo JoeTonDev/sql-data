@@ -1,1 +1,1 @@
-SQL project scripts .
+SQL project scripts.
