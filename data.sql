@@ -568,3 +568,8 @@ create table if not exists EmployeeTerritories (
     EmployeeID INT,
     TerritoryID INT
 );
+
+create table if not exists CustomerCustomerDemo (
+    CustomerID INT,
+    CustomerTypeID INT
+);
