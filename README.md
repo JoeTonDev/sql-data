@@ -1,1 +1,1 @@
-SQL database project scripts.
+SQL database project files.
