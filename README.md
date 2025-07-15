@@ -1,1 +1,1 @@
-SQL database data wrangling personal project files.
+SQL database data wrangling personal project files.  Data analysis.
