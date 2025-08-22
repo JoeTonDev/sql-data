@@ -644,4 +644,12 @@ create table if not exists Orders (
     Freight DECIMAL(10,2),   
 );
 
+create table if not exists OrderDetails (
+    OrderDetailID INT PRIMARY KEY,
+    OrderID INT,
+    ProductID INT,
+    UnitPrice DECIMAL(10,2),
+    Quantity INT,
+    Discount DECIMAL(10,2)
+);
 
