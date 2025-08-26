@@ -658,3 +658,8 @@ create table if not exists Shippers (
     CompanyName VARCHAR(255),
     Phone VARCHAR(255)
 );
+
+create table if not exists Region (
+    RegionID INT PRIMARY KEY,
+    RegionDescription VARCHAR(255)
+);
