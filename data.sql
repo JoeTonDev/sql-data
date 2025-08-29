@@ -663,3 +663,87 @@ create table if not exists Region (
     RegionID INT PRIMARY KEY,
     RegionDescription VARCHAR(255)
 );
+
+create table if not exists Territories (
+    TerritoryID INT PRIMARY KEY,
+    TerritoryDescription VARCHAR(255),    
+);
+
+create table if not exists EmployeeTerritories (
+    EmployeeID INT,
+    TerritoryID INT
+);
+
+create table if not exists CustomerCustomerDemo (
+    CustomerID INT,
+    CustomerTypeID INT
+);
+
+create table if not exists CustomerDemographics (
+    CustomerTypeID INT PRIMARY KEY,
+    CustomerDesc TEXT 
+);
+
+create table if not exists Customers (
+    CustomerID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    ContactName VARCHAR(255),   
+);
+
+create table if not exists Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(255),
+    SupplierID INT,
+    CategoryID INT,
+    QuantityPerUnit VARCHAR(255),
+    UnitPrice DECIMAL(10,2),
+    UnitsInStock INT,   
+);
+
+create table if not exists Suppliers (
+    SupplierID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    ContactName VARCHAR(255),   
+);
+
+create table if not exists Categories (
+    CategoryID INT PRIMARY KEY,
+    CategoryName VARCHAR(255),
+    Description TEXT
+);
+
+create table if not exists Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    EmployeeID INT,
+    OrderDate DATE,
+    RequiredDate DATE,
+    ShippedDate DATE,
+    ShipVia INT,
+    Freight DECIMAL(10,2),   
+);
+
+create table if not exists OrderDetails (
+    OrderDetailID INT PRIMARY KEY,
+    OrderID INT,
+    ProductID INT,
+    UnitPrice DECIMAL(10,2),
+    Quantity INT,
+    Discount DECIMAL(10,2)
+);
+
+create table if not exists Shippers (
+    ShipperID INT PRIMARY KEY,
+    CompanyName VARCHAR(255),
+    Phone VARCHAR(255)
+);
+
+create table if not exists Region (
+    RegionID INT PRIMARY KEY,
+    RegionDescription VARCHAR(255)
+);
+
+create table if not exists Territories (
+    TerritoryID INT PRIMARY KEY,
+    TerritoryDescription VARCHAR(255)
+);
