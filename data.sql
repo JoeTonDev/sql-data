@@ -752,3 +752,10 @@ create table if not exists EmployeeTerritories (
     EmployeeID INT,
     TerritoryID INT
 );
+
+create table if not exists Sales (
+    SaleID INT PRIMARY KEY,
+    ProductID INT,
+    Quantity INT,
+    SaleDate DATE
+);
