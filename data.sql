@@ -759,3 +759,10 @@ create table if not exists Sales (
     Quantity INT,
     SaleDate DATE
 );
+
+create table if not exists Inventory (
+    InventoryID INT PRIMARY KEY,
+    ProductID INT,
+    Quantity INT,
+    LastUpdated DATE
+);
