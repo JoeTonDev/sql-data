@@ -766,3 +766,11 @@ create table if not exists Inventory (
     Quantity INT,
     LastUpdated DATE
 );
+
+create table if not exists SalesReport (
+    ReportID INT PRIMARY KEY,
+    StartDate DATE,
+    EndDate DATE,
+    TotalSales DECIMAL(10,2),
+    TotalQuantity INT
+);
