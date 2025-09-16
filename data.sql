@@ -774,3 +774,10 @@ create table if not exists SalesReport (
     TotalSales DECIMAL(10,2),
     TotalQuantity INT
 );
+
+create table if not exists Stock (
+    StockID INT PRIMARY KEY,
+    ProductID INT,
+    Quantity INT,
+    LastRestocked DATE
+);
