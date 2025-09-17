@@ -781,3 +781,8 @@ create table if not exists Stock (
     Quantity INT,
     LastRestocked DATE
 );
+
+create table if not exists warehouse (
+    warehouseID INT PRIMARY KEY,
+    warehouseName VARCHAR(255),
+)
