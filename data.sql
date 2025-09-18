@@ -786,3 +786,10 @@ create table if not exists warehouse (
     warehouseID INT PRIMARY KEY,
     warehouseName VARCHAR(255),
 )
+
+create table if not exists Inventory (
+    InventoryID INT PRIMARY KEY,
+    ProductID INT,
+    Quantity INT,
+    LastUpdated DATE
+);
