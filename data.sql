@@ -689,3 +689,14 @@ create table if not exists Customers (
     CompanyName VARCHAR(255),
     ContactName VARCHAR(255),   
 );
+
+create table if not exists Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(255),
+    SupplierID INT,
+    CategoryID INT,
+    QuantityPerUnit VARCHAR(255),
+    UnitPrice DECIMAL(10,2),
+    UnitsInStock INT,   
+);
+
