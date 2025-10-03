@@ -324,3 +324,4 @@ where emp_no in (select emp_no from employees where hire_date between '1990-01-0
 
 select * from employees
 where emp_no in (select emp_no from dept_manager where emp_no = 110022 or emp_no = 110039);
+
